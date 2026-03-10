@@ -1,8 +1,8 @@
 // Navigation Tabs
-document.querySelectorAll('nav li').forEach(item => {
+document.querySelectorAll('nav li[data-tab]').forEach(item => {
     item.addEventListener('click', function () {
         // Remove active class from all tabs and contents
-        document.querySelectorAll('nav li').forEach(nav => nav.classList.remove('active'));
+        document.querySelectorAll('nav li[data-tab]').forEach(nav => nav.classList.remove('active'));
         document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
 
         // Add active class to clicked tab

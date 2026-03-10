@@ -108,6 +108,7 @@ nav li {
     display: flex;
     align-items: center;
     gap: 8px;
+    white-space: nowrap;
 }
 
 nav li:hover {
