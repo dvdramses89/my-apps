@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Apps - Mi Centro Neural</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <i class="fa-solid fa-layer-group"></i> David<span>Apps</span> Hub
+        </div>
+        <div class="time-widget" id="clock">
+            --:--
+        </div>
+    </header>
+
+    <main>
+        <div class="hero">
+            <h1>Bienvenido a tu <span>Ecosistema</span></h1>
+            <p>Selecciona la herramienta que quieres utilizar hoy. Todo centralizado desde cualquier de tus
+                dispositivos.</p>
+        </div>
+
+        <div class="apps-grid">
+            <!-- APP CARD: HipotecaWIKI -->
+            <a href="HipotecaWIKI/index.html" class="app-card glass">
+                <div class="app-icon"
+                    style="background: linear-gradient(135deg, rgba(108, 92, 231, 0.2), transparent);">
+                    <i class="fa-solid fa-house-chimney" style="color: #a29bfe;"></i>
+                </div>
+                <h3>Hipoteca<span>WIKI</span></h3>
+                <p>Estadísticas de mercado 2026, requisitos, simulador de ratios y calculadora bancaria (Fránces).</p>
+                <div class="app-tags">
+                    <span>Finanzas</span><span>Simulador</span>
+                </div>
+                <div class="launch-btn"><i class="fa-solid fa-arrow-right"></i> Abrir App</div>
+            </a>
+
+            <!-- PRÓXIMA APP PLACEHOLDER -->
+            <div class="app-card glass placeholder">
+                <div class="app-icon" style="background: rgba(255,255,255,0.05);">
+                    <i class="fa-solid fa-plus" style="color: var(--text-muted);"></i>
+                </div>
+                <h3>Nueva App</h3>
+                <p>Tu próxima creación vivirá aquí.</p>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // Reloj en tiempo real
+        function updateClock() {
+            const now = new Date();
+            document.getElementById('clock').textContent = now.toLocaleTimeString('es-ES', { hour: '2-digit', minute: '2-digit' });
+        }
+        setInterval(updateClock, 1000);
+        updateClock();
+    </script>
+</body>
+
+</html>

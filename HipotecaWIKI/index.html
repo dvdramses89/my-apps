@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HipotecaWIKI - Tu Guía Hipotecaria en España 2026</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <i class="fa-solid fa-house-chimney"></i> Hipoteca<span>WIKI</span>
+        </div>
+        <nav>
+            <ul>
+                <li class="active" data-tab="mercado"><i class="fa-solid fa-chart-line"></i> Mercado 2026</li>
+                <li data-tab="requisitos"><i class="fa-solid fa-clipboard-check"></i> Requisitos</li>
+                <li data-tab="tipos"><i class="fa-solid fa-scale-balanced"></i> Hipotecas</li>
+                <li data-tab="gastos"><i class="fa-solid fa-file-invoice-dollar"></i> Gastos y Ayudas</li>
+                <li data-tab="pasos"><i class="fa-solid fa-shoe-prints"></i> Paso a Paso</li>
+                <li data-tab="calculadora" class="highlight"><i class="fa-solid fa-calculator"></i> Calculadora</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Sección 1: Mercado 2026 -->
+        <section id="mercado" class="tab-content active">
+            <div class="hero">
+                <h1>El Mercado Hipotecario Español en <span>2026</span></h1>
+                <p>Toma decisiones informadas basadas en las últimas previsiones del Euríbor, tipos de interés y
+                    rentabilidad del mercado inmobiliario.</p>
+            </div>
+
+            <div class="cards-grid">
+                <div class="card glass">
+                    <div class="card-icon"><i class="fa-solid fa-arrow-trend-down"></i></div>
+                    <h3>Previsión Euríbor</h3>
+                    <p>Tras las bajadas del año anterior, se espera **estabilidad**. El consenso sitúa el Euríbor a 12
+                        meses cerrando 2026 en torno al <strong>2,22%</strong>. Las previsiones oscilan entre el 1,90%
+                        (BCE/Funcas) y el 2,35% (Afi).</p>
+                    <div class="stat">Euríbor Previsto: 2,22%</div>
+                </div>
+                <div class="card glass">
+                    <div class="card-icon"><i class="fa-solid fa-percent"></i></div>
+                    <h3>Tipos de Interés Actuales</h3>
+                    <p>Existe una fuerte competencia bancaria. Las **Hipotecas Fijas** bonificadas parten desde el
+                        <strong>2,00% al 2,85%</strong>. Las **Mixtas** dominan el inicio con tramos fijos desde
+                        <strong>1,40%</strong>, y las variables ofrecen diferenciales sobre Euríbor de <strong>+0,48% a
+                            +0,50%</strong>.
+                    </p>
+                </div>
+                <div class="card glass">
+                    <div class="card-icon"><i class="fa-solid fa-sack-dollar"></i></div>
+                    <h3>¿Es rentable comprar?</h3>
+                    <p>El "ladrillo" sigue siendo un valor refugio y la rentabilidad bruta media por alquiler superó el
+                        <strong>7,02%</strong>. Pese a que la vivienda usada marcó récord en febrero de 2026 (2.673
+                        €/m²), la falta de oferta nueva asegura una probable revalorización. Sin embargo, hay que
+                        vigilar la regulación de alquileres.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección 2: Requisitos -->
+        <section id="requisitos" class="tab-content">
+            <h2><i class="fa-solid fa-clipboard-check"></i> Requisitos y Preparación</h2>
+            <div class="content-split">
+                <div class="text-content glass">
+                    <h3>Perfil del Cliente Ideal</h3>
+                    <ul class="checklist">
+                        <li><i class="fa-solid fa-check"></i> <strong>Estabilidad Laboral:</strong> Contrato indefinido
+                            (mínimo 6 meses - 2 años de antigüedad). Sectores como tecnología, sanidad o función pública
+                            son muy valorados.</li>
+                        <li><i class="fa-solid fa-check"></i> <strong>Solvencia impecable:</strong> Sin inclusión en
+                            ficheros de morosos (ASNEF, CIRBE limpio).</li>
+                        <li><i class="fa-solid fa-check"></i> <strong>Ahorro Automático:</strong> Los bancos (usando
+                            "scoring" digital) valoran un patrón de ahorro mensual.</li>
+                        <li><i class="fa-solid fa-check"></i> <strong>Edad Límite:</strong> Edad + plazo de la hipoteca
+                            no suele superar los 75 años.</li>
+                        <li><i class="fa-solid fa-check"></i> <strong>Límite de Endeudamiento:</strong> La "Ratio de
+                            Esfuerzo" (cuota hipoteca + otras deudas) no debe superar el <strong>30-35%</strong> de tus
+                            ingresos netos mensuales.</li>
+                    </ul>
+
+                    <h3>Documentos que te pedirá el banco</h3>
+                    <div class="tags">
+                        <span>DNI/NIE</span> <span>Vida Laboral</span> <span>IRPF</span> <span>Últimas 3 Nóminas</span>
+                        <span>Extracto bancario (3-6 meses)</span> <span>Nota Simple Vivienda</span> <span>Certificado
+                            Energético</span>
+                    </div>
+                </div>
+                <div class="visual-content glass">
+                    <h3>Regla del 20% + 10%</h3>
+                    <p>En España, por ley de protección crediticia, el banco suele financiar un máximo del <strong>80%
+                            del valor de tasación/compraventa</strong>.</p>
+                    <div class="progress-chart">
+                        <div class="bar bank" style="width: 80%;">Banco (80%)</div>
+                        <div class="bar saving-1" style="width: 20%;">Entrada (20%)</div>
+                    </div>
+                    <div style="position: relative; margin-bottom: 15px;" class="mt-2">
+                        <div class="progress-chart" style="margin-bottom: 0;">
+                            <div class="bar saving-2" style="width: 12%;"></div>
+                        </div>
+                        <span
+                            style="position: absolute; left: 14%; top: 50%; transform: translateY(-50%); font-size: 0.85rem; white-space: nowrap; font-weight: bold; color: var(--text-main);">←
+                            Tus ahorros para gastos (10-15%)</span>
+                    </div>
+                    <p class="mt-2 text-sm">Necesitas tener ahorrado aprox. <strong>30-35%</strong> del valor del
+                        inmueble, a menos que optes por un Aval ICO o ayudas autonómicas.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección 3: Tipos de Hipoteca -->
+        <section id="tipos" class="tab-content">
+            <h2><i class="fa-solid fa-scale-balanced"></i> Comparativa de Hipotecas (2026)</h2>
+            <div class="cards-grid">
+                <div class="card glass pricing">
+                    <h3>Hipoteca Fija</h3>
+                    <div class="price">2,00% - 2,85% <span>TIN (aprox)</span></div>
+                    <ul class="features">
+                        <li><i class="fa-regular fa-circle-check"></i> <strong>Seguridad total:</strong> cuota
+                            invariable.</li>
+                        <li><i class="fa-regular fa-circle-check"></i> <strong>Paz mental</strong> ante fluctuaciones
+                            del Euríbor.</li>
+                        <li class="negative"><i class="fa-regular fa-circle-xmark"></i> Coste inicial mayor que las
+                            variables.</li>
+                        <li class="negative"><i class="fa-regular fa-circle-xmark"></i> Comisiones por cancelación más
+                            caras (hasta 2%).</li>
+                    </ul>
+                </div>
+                <div class="card glass pricing recommended">
+                    <div class="badge">Tendencia 2026</div>
+                    <h3>Hipoteca Mixta</h3>
+                    <div class="price">Desde 1,40% <span>Fijo Inicial (3-10a)</span></div>
+                    <ul class="features">
+                        <li><i class="fa-regular fa-circle-check"></i> <strong>Cuota reducida</strong> los primeros
+                            años.</li>
+                        <li><i class="fa-regular fa-circle-check"></i> Protege en fase de mayores intereses.</li>
+                        <li class="warning"><i class="fa-solid fa-triangle-exclamation"></i> Incertidumbre tras periodo
+                            fijo.</li>
+                        <li class="warning"><i class="fa-solid fa-triangle-exclamation"></i> Transición a Euríbor +
+                            diferencial.</li>
+                    </ul>
+                </div>
+                <div class="card glass pricing">
+                    <h3>Hipoteca Variable</h3>
+                    <div class="price">Euríbor + <span>0,48%</span></div>
+                    <ul class="features">
+                        <li><i class="fa-regular fa-circle-check"></i> <strong>Potencial de ahorro</strong> si el
+                            Euríbor baja.</li>
+                        <li><i class="fa-regular fa-circle-check"></i> Menores comisiones de amortización.</li>
+                        <li class="negative"><i class="fa-regular fa-circle-xmark"></i> Riesgo alto si el Euríbor vuelve
+                            a subir.</li>
+                        <li class="negative"><i class="fa-regular fa-circle-xmark"></i> Requiere capacidad para tolerar
+                            variaciones.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección 4: Gastos y Ayudas -->
+        <section id="gastos" class="tab-content">
+            <h2><i class="fa-solid fa-file-invoice-dollar"></i> Gastos de Compraventa y Ayudas</h2>
+            <div class="content-split">
+                <div class="gastos-list glass">
+                    <h3>Gastos a Pagar (10% - 12%)</h3>
+                    <ul class="expenses">
+                        <li>
+                            <div class="expense-name">Impuestos (Segunda mano: ITP | Nueva: IVA)</div>
+                            <div class="expense-val">ITP: 6-11% | IVA: 10%</div>
+                        </li>
+                        <li>
+                            <div class="expense-name">Notaría (Según aranceles)</div>
+                            <div class="expense-val">0,2% - 0,5% (450€ - 1.200€)</div>
+                        </li>
+                        <li>
+                            <div class="expense-name">Registro de la Propiedad</div>
+                            <div class="expense-val">0,1% - 0,25% (250€ - 900€)</div>
+                        </li>
+                        <li>
+                            <div class="expense-name">Gestoría (Tramitación)</div>
+                            <div class="expense-val">300€ - 600€</div>
+                        </li>
+                        <li>
+                            <div class="expense-name">Tasación del Inmueble (Obligatorio)</div>
+                            <div class="expense-val">250€ - 600€</div>
+                        </li>
+                    </ul>
+                    <p class="text-sm mt-2">* El <strong>IAJD</strong> (Impuesto de Actos Jurídicos Documentados) de la
+                        hipoteca lo paga el banco por ley.</p>
+                </div>
+                <div class="ayudas-list glass">
+                    <h3>Ayudas Estatales y Autonómicas</h3>
+                    <div class="ayuda-item">
+                        <h4>Avales ICO (20% - 25%)</h4>
+                        <p>El Estado avala el 20% (hasta 25% si es muy eficiente) permitiendo bancos financiar el 100%.
+                            Para <35 años y familias (Ingresos < 37.800€).</p>
+                    </div>
+                    <div class="ayuda-item">
+                        <h4>Ayudas Zonas Rurales</h4>
+                        <p>Subvenciones hasta 10.800€ para menores de 35 que compren en municipios de menos de 10.000
+                            habitantes.</p>
+                    </div>
+                    <div class="ayuda-item">
+                        <h4>Planes Autonómicos</h4>
+                        <p><strong>Madrid:</strong> 'Mi Primera Vivienda' (hasta 100% financiacion).
+                            <strong>Cataluña:</strong> Préstamo ICF de 50.000€ al 0% a devolver tras hipoteca.
+                            <strong>Galicia:</strong> Deducciones de ITP.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección 5: Paso a Paso -->
+        <section id="pasos" class="tab-content">
+            <h2><i class="fa-solid fa-shoe-prints"></i> Proceso Paso a Paso y Documentación</h2>
+            <div class="timeline glass">
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"><i class="fa-solid fa-1"></i></div>
+                    <div class="timeline-content">
+                        <h3>1. Análisis de Solvencia (Scoring)</h3>
+                        <p>El banco evalúa tu perfil de riesgo analizando tu nómina, hábitos de ahorro y deudas vigentes
+                            buscando que tu cuota no sume más del 30-35% de ingresos.</p>
+                        <div class="docs-required">
+                            <strong><i class="fa-solid fa-folder-open"></i> Documentos del titular:</strong> DNI/NIE,
+                            Vida Laboral, última declaración de IRPF, 3 últimas nóminas y contrato (asalariados) o
+                            modelos fiscales (autónomos), y movimientos bancarios recientes (3 a 6 meses).
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"><i class="fa-solid fa-2"></i></div>
+                    <div class="timeline-content">
+                        <h3>2. Reserva y Comprobación Registral</h3>
+                        <p>Se verifica la legalidad del inmueble y se firma la reserva (arras).</p>
+                        <div class="docs-required">
+                            <strong><i class="fa-solid fa-folder-open"></i> Documentos del inmueble:</strong> Nota
+                            Simple Informativa (Registro), Contrato de Arras firmado y Certificado de Eficiencia
+                            Energética.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"><i class="fa-solid fa-3"></i></div>
+                    <div class="timeline-content">
+                        <h3>3. Solicitud Formal y Tasación</h3>
+                        <p>Una tasadora externa determina el valor objetivo del inmueble. Si cumples requisitos, aquí
+                            puedes solicitar los Avales ICO para financiar hasta el 100%.</p>
+                        <div class="docs-required">
+                            <strong><i class="fa-solid fa-folder-open"></i> Documentos extra (Ayudas):</strong>
+                            Certificado de Empadronamiento y Certificado de No Propiedad.
+                        </div>
+                        <div class="docs-received">
+                            <strong><i class="fa-solid fa-envelope-open-text"></i> El banco te entrega:</strong> FEIN
+                            (condiciones finales vinculantes) y FiAE (advertencias legales).
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"><i class="fa-solid fa-4"></i></div>
+                    <div class="timeline-content">
+                        <h3>4. Firma ante Notario y Registro</h3>
+                        <p>Se firma la escritura de compraventa y del préstamo hipotecario, pagando los impuestos (ITP o
+                            IVA, Notaría, Gestoría).</p>
+                        <div class="docs-received">
+                            <strong><i class="fa-solid fa-building-columns"></i> Documentos finales:</strong> Escritura
+                            Pública de Compraventa e Inscripción en el Registro de la Propiedad.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Sección 6: Calculadora -->
+        <section id="calculadora" class="tab-content">
+            <h2><i class="fa-solid fa-calculator"></i> Calculadora Inteligente de Hipoteca</h2>
+            <div class="calculadora-container glass">
+                <div class="calc-inputs">
+                    <div class="form-group">
+                        <label>Precio de la Vivienda (€)</label>
+                        <input type="number" id="calc-precio" value="250000" step="5000">
+                    </div>
+                    <div class="form-group">
+                        <label>Ahorros Disponibles (€)</label>
+                        <input type="number" id="calc-ahorros" value="75000" step="1000">
+                    </div>
+                    <div class="form-group">
+                        <label>Plazo Hipoteca (Años)</label>
+                        <input type="range" id="calc-plazo-slider" min="10" max="40" value="30">
+                        <span id="calc-plazo-display">30 años</span>
+                    </div>
+                    <div class="form-group">
+                        <label>Tipo de Interés Anual (TIN %)</label>
+                        <input type="number" id="calc-tipo" value="2.50" step="0.1">
+                    </div>
+                    <div class="form-group">
+                        <label>Impuestos Compra (ITP/IVA %)</label>
+                        <input type="number" id="calc-itp" value="10" step="0.5">
+                    </div>
+                    <div class="form-group">
+                        <label>Tus Ingresos Netos Mensuales (€)</label>
+                        <input type="number" id="calc-ingresos" value="2800" step="100">
+                    </div>
+                    <div class="form-group"
+                        style="flex-direction:row; align-items:center; gap:10px; margin-top:5px; background: rgba(0, 184, 148, 0.1); padding: 10px; border-radius: 8px; border: 1px solid rgba(0, 184, 148, 0.3);">
+                        <input type="checkbox" id="calc-ico"
+                            style="width:20px; height:20px; accent-color: var(--success);"
+                            onchange="calcularHipoteca()">
+                        <label style="color:white; font-weight:600; cursor:pointer;" for="calc-ico">Aplicar Aval ICO
+                            (100% Financiación)</label>
+                    </div>
+                    <button class="btn-primary" onclick="calcularHipoteca()">Calcular Simulación</button>
+                </div>
+                <div class="calc-results">
+                    <h3>Resultados de la Simulación</h3>
+
+                    <div class="result-box glow">
+                        <p>Cuota Mensual Estimada</p>
+                        <h2 id="res-cuota">-- € / mes</h2>
+                    </div>
+
+                    <div class="result-details">
+                        <div class="detail-row">
+                            <span>Importe a Financiar (Hipoteca)</span>
+                            <span id="res-prestamo" class="bold">-- €</span>
+                        </div>
+                        <div class="detail-row">
+                            <span>Gastos de Compraventa e Impuestos (Aprox)</span>
+                            <span id="res-gastos" class="bold text-orange">-- €</span>
+                        </div>
+                        <div class="detail-row">
+                            <span>Ahorro Necesario (Entrada + Gastos)</span>
+                            <span id="res-ahorro-nec" class="bold">-- €</span>
+                        </div>
+                        <div class="detail-row" id="ahorro-warning"
+                            style="color:var(--danger); display:none; margin-top:5px; font-size:0.85rem;">
+                            <i class="fa-solid fa-triangle-exclamation"></i> Tus ahorros actuales no cubren Entrada +
+                            Gastos.
+                        </div>
+                    </div>
+
+                    <div class="ratio-esfuerzo mt-2">
+                        <h4>Ratio de Esfuerzo</h4>
+                        <div class="progress-chart">
+                            <div id="bar-esfuerzo" class="bar success" style="width: 0%;">0%</div>
+                        </div>
+                        <p id="res-esfuerzo-text" class="text-sm mt-1">El banco recomienda no superar el 30-35%.</p>
+                    </div>
+
+                    <div class="save-actions mt-2" style="display:flex; gap:10px; margin-top:25px;">
+                        <input type="text" id="calc-save-name" placeholder="Guardar cálculo como... (Ej: Piso Madrid)"
+                            style="flex:1; padding:10px; border-radius:8px; border:1px solid var(--border-glass); background:rgba(0,0,0,0.3); color:white; font-family:'Outfit', sans-serif;">
+                        <button class="btn-primary" style="margin-top:0;" onclick="guardarSimulacion()"><i
+                                class="fa-solid fa-floppy-disk"></i> Guardar</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="saved-sims-container" class="mt-2" style="display:none; margin-top: 40px;">
+                <h2><i class="fa-solid fa-bookmark"></i> Simulaciones Guardadas</h2>
+                <div class="cards-grid" id="saved-sims-list"></div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
