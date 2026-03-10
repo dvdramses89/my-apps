@@ -168,6 +168,7 @@ h1 {
 h1 span {
     background: -webkit-linear-gradient(45deg, var(--primary), var(--secondary));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -367,7 +368,7 @@ h2 {
 
 
 /* Gastos y ayudas */
-.expenses list-style: none;
+.expenses { list-style: none; }
 
 .expenses li {
     display: flex;
@@ -504,12 +505,14 @@ h2 {
 /* Range slider custom styling */
 input[type="range"] {
     -webkit-appearance: none;
+    appearance: none;
     width: 100%;
     background: transparent;
 }
 
 input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none;
+    appearance: none;
     height: 20px;
     width: 20px;
     border-radius: 50%;
@@ -582,20 +585,98 @@ input[type="range"]::-webkit-slider-runnable-track {
 }
 
 /* Responsiveness */
-@media (max-width: 768px) {
-
+@media (max-width: 900px) {
+    header {
+        padding: 20px;
+    }
     .content-split,
     .calculadora-container {
         grid-template-columns: 1fr;
+        gap: 25px;
     }
+}
 
-    nav ul {
-        overflow-x: auto;
-        padding-bottom: 10px;
-    }
-
+@media (max-width: 768px) {
     header {
         flex-direction: column;
         gap: 15px;
+        padding: 15px 20px;
+    }
+
+    nav {
+        width: 100%;
+        overflow-x: auto;
+        padding-bottom: 5px;
+        /* Scroll smoothly on iOS */
+        -webkit-overflow-scrolling: touch;
+    }
+
+    nav ul {
+        flex-wrap: nowrap;
+        white-space: nowrap;
+        width: max-content;
+        margin: 0 auto;
+    }
+
+    nav li {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .glass {
+        padding: 15px;
+    }
+
+    .cards-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .result-box.glow h2 {
+        font-size: 2rem;
+    }
+
+    .detail-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+        font-size: 0.9rem;
+    }
+
+    .timeline {
+        padding: 15px 0;
+    }
+
+    .timeline::before {
+        left: 15px;
+    }
+
+    .timeline-item {
+        padding-left: 35px;
+    }
+
+    .timeline-dot {
+        width: 26px;
+        height: 26px;
+        font-size: 0.8rem;
+    }
+    
+    .save-actions {
+        flex-direction: column;
+    }
+    
+    .save-actions input {
+        width: 100%;
     }
 }
