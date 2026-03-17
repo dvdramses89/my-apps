@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EF English App</title>
+    <!-- Modern Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- html2pdf for PDF export -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <!-- Mermaid for mindmaps -->
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar">
+        <div class="sidebar-header">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <h2>EF<span>English</span></h2>
+        </div>
+        
+        <ul class="nav-links">
+            <li><a href="#learning" class="active" data-section="learning"><i class="fa-solid fa-book-open"></i> Aprendizaje</a></li>
+            <li><a href="#tips" data-section="tips"><i class="fa-solid fa-lightbulb"></i> Resúmenes y Tips</a></li>
+            <li><a href="#exercises" data-section="exercises"><i class="fa-solid fa-pen-to-square"></i> Ejercicios Prácticos</a></li>
+            <li><a href="#flashcards" data-section="flashcards"><i class="fa-solid fa-clone"></i> Flashcards</a></li>
+            <li><a href="#roleplay" data-section="roleplay"><i class="fa-solid fa-users"></i> Role Play</a></li>
+            <li><a href="#import" data-section="import"><i class="fa-solid fa-cloud-arrow-up"></i> Importar / Ajustes</a></li>
+            
+            <li class="back-hub-wrapper">
+                <a href="../index.html" class="back-hub-btn"><i class="fa-solid fa-layer-group"></i> Volver al Hub</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+        <header class="topbar">
+            <!-- Mobile Menu Toggle -->
+            <button id="mobile-menu-btn" class="btn btn-outline mobile-only">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <!-- Topic Selector -->
+            <div class="topic-selector-container">
+                <label for="topic-select">Temática actual:</label>
+                <select id="topic-select">
+                    <!-- Populated by JS -->
+                </select>
+            </div>
+            <div class="header-actions">
+                <button id="btn-print" class="btn btn-outline" title="Imprimir"><i class="fa-solid fa-print"></i></button>
+                <button id="btn-export-pdf" class="btn btn-primary" title="Exportar PDF"><i class="fa-solid fa-file-pdf"></i> Exportar</button>
+            </div>
+        </header>
+
+        <!-- Container for PDF rendering -->
+        <div id="content-container" class="content-wrapper">
+            
+            <!-- SECTION: Aprendizaje -->
+            <section id="sec-learning" class="content-section active">
+                <div class="section-header">
+                    <h1>📚 Aprendizaje: <span class="topic-title-display"></span></h1>
+                    <p>Contenido principal de estudio, vocabulario e inmersión.</p>
+                </div>
+                <div class="card glass" id="learning-content">
+                    <!-- Content injected via JS -->
+                </div>
+            </section>
+
+            <!-- SECTION: Resúmenes y Tips -->
+            <section id="sec-tips" class="content-section">
+                <div class="section-header">
+                    <h1>💡 Resúmenes y Tips: <span class="topic-title-display"></span></h1>
+                    <p>Mapas conceptuales, mnemotecnia y atajos mentales.</p>
+                </div>
+                <div class="card glass" id="tips-content">
+                     <!-- Content injected via JS -->
+                </div>
+            </section>
+
+            <!-- SECTION: Ejercicios -->
+            <section id="sec-exercises" class="content-section">
+                <div class="section-header">
+                    <h1>✏️ Ejercicios Prácticos: <span class="topic-title-display"></span></h1>
+                    <p>Pon a prueba tus conocimientos de gramática y vocabulario.</p>
+                </div>
+                <div class="card glass">
+                    <div id="exercises-content">
+                         <!-- Content injected via JS -->
+                    </div>
+                    <button id="btn-check-answers" class="btn btn-success mt-4">Comprobar Respuestas</button>
+                    <div id="exercise-results" class="mt-2 hidden"></div>
+                </div>
+            </section>
+
+            <!-- SECTION: Flashcards -->
+            <section id="sec-flashcards" class="content-section">
+                 <div class="section-header">
+                    <h1>🃏 Flashcards: <span class="topic-title-display"></span></h1>
+                    <p>Dale vuelta a la tarjeta para ver la respuesta.</p>
+                </div>
+                <div class="flashcard-deck" id="flashcard-container">
+                    <!-- Cards injected via JS -->
+                </div>
+            </section>
+
+            <!-- SECTION: Role Play (Creative) -->
+            <section id="sec-roleplay" class="content-section">
+                <div class="section-header">
+                    <h1>🎭 Role Play: <span class="topic-title-display"></span></h1>
+                    <p>Practica con un compañero usando estas directrices creativas.</p>
+                </div>
+                <div class="card glass scenario-card">
+                    <h3>📌 Situación Base</h3>
+                    <p id="rp-scenario"></p>
+                </div>
+                <div class="roleplay-grid">
+                    <div class="card glass role-a">
+                        <div class="role-badge">Persona A</div>
+                        <p id="rp-roleA"></p>
+                    </div>
+                    <div class="card glass role-b">
+                        <div class="role-badge">Persona B</div>
+                        <p id="rp-roleB"></p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION: Importar -->
+            <section id="sec-import" class="content-section">
+                 <div class="section-header">
+                    <h1>☁️ Importar Temáticas</h1>
+                    <p>Añade nuevos contenidos desde NotebookLM.</p>
+                </div>
+                <div class="card glass text-center">
+                    <i class="fa-solid fa-cloud-arrow-up import-icon" style="font-size: 3rem; color: var(--primary); margin-bottom: 1rem;"></i>
+                    <h3>Arrastra y suelta tu archivo JSON aquí</h3>
+                    <p>Próximamente: Integración automática con el ecosistema.</p>
+                    <input type="file" id="file-import" class="hidden" accept=".json">
+                    <button class="btn btn-primary mt-4" onclick="document.getElementById('file-import').click()">Seleccionar Archivo JSON</button>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- App Scripts -->
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
